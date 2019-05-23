@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>BOMBER PRE-ALPHA 0.01</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<header>
+  <nav>
+    <p id="free">Get free 100 points</p>
+    <p>Your balance: </p>
+    <p id="balance"></p>
+    <p>Login</p>
+    <p>Register</p>
+  </nav>
+</header>
+<main>
+  <h1>ez babki</h1>
+  <div class="common-container">
+    <div class="minefield-container">
+      <div id="minefield">
+        <div id="0" class="cell"></div>
+        <div id="1" class="cell"></div>
+        <div id="2" class="cell"></div>
+        <div id="3" class="cell"></div>
+        <div id="4" class="cell"></div>
+        <div id="5" class="cell"></div>
+        <div id="6" class="cell"></div>
+        <div id="7" class="cell"></div>
+        <div id="8" class="cell"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="new-game">New Game</button>
+      <button id="pick">Pick Up Winnings</button>
+      <label for="bet">BET: </label>
+      <input type="number" id="bet" min="0">
+      <p id="mine"></p>
+      <div class="scoreboard">
+        <p>SCORE: </p>
+        <p id="score"></p>
+      </div>
+    </div>
+  </div>
+  <script src="bomber.js"></script>
+</main>
+
+</body>
+</html>

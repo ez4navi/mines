@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav p {
+  margin-right: 20px;
+  font-size: 1.5em;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #6b8aff;
+}
+.minefield-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#minefield {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 450px;
+  max-width: 450px;
+  height: 100%;
+  width: 100%;
+}
+
+#minefield * {
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+}
+
+#minefield *:hover {
+  cursor: pointer;
+}
+
+#free {
+  visibility: hidden;
+}
+
+#free:hover {
+  cursor: pointer;
+}
+
+#balance {
+  color: #00ff11;
+}
+
+.common-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.controls {
+  margin-left: 10px;
+  max-width: 220px;
+  width: 100%;
+}
+
+.controls * {
+  height: 50px;
+}
+
+#pick {
+  margin-bottom: 30px;
+}
+
+#score {
+  font-size: 1.5em;
+  font-family: "ObelixPro";
+}
+
+#bet {
+  max-height: 20px;
+  max-width: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
