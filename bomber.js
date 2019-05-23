@@ -2,7 +2,8 @@ const minefield = document.querySelector("#minefield").children,
       free = document.querySelector("#free"),
       WHITE = "#ffffff", cell = document.querySelectorAll(".cell"),
       checked = [], headline = document.querySelector("body > main > h1"),
-      pick = document.querySelector("#pick");
+      pick = document.querySelector("#pick"),
+      newGame = document.querySelector("#new-game");
 let bomb, score = 0, balance = 0, gameStatus = false, bet = 0, canPlay = false;
 
 function clearField() {
@@ -125,6 +126,7 @@ function finish() {
         updateScore();
         saveBalance();
         pick.disabled = false;
+        newGame.disabled = false;
     }, 2000);
 }
 
@@ -162,7 +164,7 @@ document.querySelector("#bet").addEventListener("keypress", function (evt) {
     }
 }); //Check input on incorrect bet
 
-document.querySelector("#new-game").onclick = function () {
+newGame.onclick = function () {
     updateBet();
     checkBet();
     if (canPlay) {
@@ -194,6 +196,7 @@ document.querySelector("#minefield").onclick = function (e) {
             failCell(+e.target.id);
             finish();
             pick.disabled = "disabled";
+            newGame.disabled = "disabled";
         }
     }
 };
