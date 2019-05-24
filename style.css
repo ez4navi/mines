@@ -9,8 +9,8 @@ nav {
   justify-content: flex-end;
 }
 
-nav p {
-  margin-right: 20px;
+nav label, p {
+  margin-right: 10px;
   font-size: 1.5em;
   color: red;
 }
@@ -88,6 +88,13 @@ h1 {
   width: 100%;
 }
 
+#login {
+  max-height: 20px;
+  max-width: 100px;
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
